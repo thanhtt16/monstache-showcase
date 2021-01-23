@@ -1,3 +1,8 @@
 cluster.name: "docker-cluster"
 network.host: 0.0.0.0
 indices.memory.index_buffer_size: 60%
+bootstrap.memory_lock: true
+node.name: es01
+discovery.type: single-node
+# discovery.seed_hosts: es02,es03
+# cluster.initial_master_nodes: es01,es02,es03
